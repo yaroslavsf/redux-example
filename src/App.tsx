@@ -1,14 +1,12 @@
 import React from 'react';
-import { Card } from './components/Card';
+import { Card } from './components/UserCard';
 import { Form } from './components/Form';
+import { MainPage } from './components/MainPage';
 
 function App() {
   return (
     <>
-      <div className="container vh-100">
-        <Card/>
-        <Form/>
-      </div>
+    <MainPage/>
     </>
   );
 }
