@@ -5,8 +5,10 @@ import { Form } from './components/Form';
 function App() {
   return (
     <>
-      <Card/>
-      <Form/>
+      <div className="container vh-100">
+        <Card/>
+        <Form/>
+      </div>
     </>
   );
 }
