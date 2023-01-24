@@ -21,7 +21,7 @@ export const Form = () => {
    
     return (
         <>
-            <div className="d-flex flex-column justify-content-center align-items-center h-50">
+            <div className="d-flex flex-column justify-content-center align-items-center h-25">
 
             <div className="w-50">
                 <form >
