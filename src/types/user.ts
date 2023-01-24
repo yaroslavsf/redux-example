@@ -1,12 +1,9 @@
-interface UserInfo {
+export interface UserState {
+    loading: boolean;
     login: string;
     created_at: string;
     public_repos: number;
-}
-
-export interface UserState {
-    loading: boolean;
-    user: UserInfo;
+    avatar_url: string,
     error: null | string
 }
 
@@ -24,7 +21,10 @@ interface FetchUserAction {
 interface FetchUserSuccessAction {
     type: UserActionTypes.FETCH_USER_SUCCESS;
     payload: {
-        user: UserInfo,
+        login: string;
+        created_at: string;
+        public_repos: number;
+        avatar_url:string;
     };
 }
 

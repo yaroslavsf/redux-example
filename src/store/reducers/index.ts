@@ -1,9 +1,11 @@
 import { combineReducers } from "@reduxjs/toolkit";
+import { reposReducer } from "./reposReducer";
 import { userReducer } from "./userReducer";
 
 export const rootReducer = combineReducers(
     {
-        user: userReducer
+        user: userReducer,
+        repos: reposReducer
     }
 )
 
